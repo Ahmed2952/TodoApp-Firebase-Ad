@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TODO APP</title>
+</head>
+
+
+
+<body>
+
+    <div class="main-div">
+        <div id="myDIV" class="header">
+            <h1>TODO APP</h2>
+                <input type="text" id="todo-item" placeholder="Title...">
+                <span onclick="addTodo()" class="addbtn">Add</span>
+                <span onclick="deleteAll()" class="deletebtn">Delete</span>
+        </div>
+
+
+        <div style="background-color: #383838;">
+            <ul id="list">
+
+            </ul>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top: 50px;">
+        <button style="padding: 10px; font-size: 26px; font-weight: bolder; text-decoration: none; border-radius: 20px; border: 2px solid black;">
+            <a href="https://todoapp-8e44a-default-rtdb.firebaseio.com/" style="color: #383838;">DATABASE</a>
+        </button>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
